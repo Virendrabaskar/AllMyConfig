@@ -76,17 +76,18 @@ if !exists('s:doneMappings')
 endif 
 " end HTML mappings }}}
 
+" 
 " SmartBS: smart backspacing {{{
-let g:smartBS_html = '\(' .
-			\ '&[^;]\+;'  .
-			\ '\)' . "$"
+"let g:smartBS_html = '\(' .
+"			\ '&[^;]\+;'  .
+"			\ '\)' . \"$"
 
-inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
+"inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
 " }}} 
 
 " let b:input_method = "iso8859-2"
 let b:input_method = &encoding
-call UseDiacritics()
+"call UseDiacritics()
 
 " Modeline {{{
 " vim:set ts=4:

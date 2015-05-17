@@ -21,12 +21,12 @@ endif
 call UseDiacritics()
 
 " set regular expresion for Smart backspacing
-let g:smartBS_wtt2 = '\(' .
-			\ "&#x[0-9A-Fa-f]\\{2,4};" .
-			\ '\)' . "$"
+"let g:smartBS_wtt2 = '\(' .
+"			\ \""&#x[0-9A-Fa-f]\\{2,4};" .
+"			\ '\)' . \"$"
 
 " map <BS> to function SmartBS()
-inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
+"inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
 
 " Modeline {{{
 " vim:set ts=4:

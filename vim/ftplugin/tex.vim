@@ -359,18 +359,18 @@ endfunction
 " SmartBS: smart backspacing {{{
 
 " set regular expresion for Smart backspacing
-let g:smartBS_tex = '\(' .
-			\ "\\\\[\"^'=v]{\\S}"      . '\|' .
-			\ "\\\\[\"^'=]\\S"         . '\|' .
-			\ '\\v \S'                 . '\|' .
-			\ "\\\\[\"^'=v]{\\\\[iI]}" . '\|' .
-			\ '\\v \\[iI]'             . '\|' .
-			\ '\\q \S'                 . '\|' .
-			\ '\\-'                    .
-			\ '\)' . "$"
+"let g:smartBS_tex = '\(' .
+"			\ \"\\\\[\"^'=v]{\\S}"      . '\|' .
+"			\ \"\\\\[\"^'=]\\S"         . '\|' .
+"			\ '\\v \S'                 . '\|' .
+"			\ \"\\\\[\"^'=v]{\\\\[iI]}" . '\|' .
+"			\ '\\v \\[iI]'             . '\|' .
+"			\ '\\q \S'                 . '\|' .
+"			\ '\\-'                    .
+"			\ '\)' . \"$"
 
 " map <BS> to function SmartBS()
-inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
+"inoremap <buffer> <BS> <C-R>=SmartBS()<CR>
 " }}} 
 
 " MakeTexFolds: see ../plugin/syntaxFolds.vim for documentation {{{

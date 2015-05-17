@@ -1,0 +1,5 @@
+Step 1 :
+    Map the config paths into conf.csv file.
+Step 2 :
+    Run the ./install.pl
+

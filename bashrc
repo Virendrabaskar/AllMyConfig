@@ -56,21 +56,21 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
-if [ "$color_prompt" = yes ]; then
-    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
-else
-    PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
-fi
+#if [ "$color_prompt" = yes ]; then
+#    PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ '
+#else
+ #   PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
+#fi
 unset color_prompt force_color_prompt
 
 # If this is an xterm set the title to user@host:dir
-case "$TERM" in
-xterm*|rxvt*)
-    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
-    ;;
-*)
-    ;;
-esac
+#case "$TERM" in
+#xterm*|rxvt*)
+#    PS1="\[\e]0;${debian_chroot:+($debian_chroot)}\u@\h: \w\a\]$PS1"
+#    ;;
+#*)
+#    ;;
+#esac
 
 # enable color support of ls and also add handy aliases
 if [ -x /usr/bin/dircolors ]; then
@@ -115,18 +115,20 @@ fi
 [ -r /home/baskar/.byobu/prompt ] && . /home/baskar/.byobu/prompt   #byobu-prompt#
 
 
+
 echo "Welcome Bas"
 echo `date`
 echo "-----------------------------------------------------"
 
 #PAMS 
 alias mdm=/home/baskar/Projects/PAMS-MDM
-alias pams='cd /home/baskar/Projects/PAMS-WWW/;'
+alias pams='cd /home/baskar/Projects/PAMS-WWW/;byobu'
 alias www='cd /home/baskar/Projects/PAMS-WWW/;'
 alias alerts='cd /home/baskar/Projects/PAMS-WWW/;'
 alias mdm='cd /home/baskar/Projects/PAMS-MDM/;'
 alias common='cd /home/baskar/Projects/PAMS-Common/;'
 alias com='cd /home/baskar/Projects/PAMS-Common/;'
+alias and='cd /home/baskar/Personal/Projects/AndroidStudioProjects/';
 
 # Config information 
 export PAMS_COMMON_MAIN_CONFIG=/home/baskar/Projects/PAMS-Common/conf/main.pl
@@ -140,4 +142,6 @@ export PAMS_WWW_ROOT=/home/baskar/Projects/PAMS-WWW/
 
 export ANDROID_NDK=/home/baskar/Android/Ndk/android-ndk-r10d
 export ANDROID_SDK=/home/baskar/Android/Sdk/
+export ANDROID_HOME=/home/baskar/Android/Sdk/
+
 

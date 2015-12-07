@@ -407,3 +407,5 @@ autocmd Filetype java setlocal omnifunc=javacomplete#Complete
 let g:SuperTabDefaultCompletionType = 'context'
 let g:SuperTabMappingForward = '<s-tab>'
 let g:SuperTabMappingBackward = '<s-nul>'
+
+set ts=8

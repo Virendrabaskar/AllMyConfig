@@ -115,33 +115,12 @@ fi
 [ -r /home/baskar/.byobu/prompt ] && . /home/baskar/.byobu/prompt   #byobu-prompt#
 
 
+/home/baskar/Data/Applications/cmds/quotes.sh
+#echo "Welcome Bas"
+#echo `date`
+#echo "-----------------------------------------------------"
 
-echo "Welcome Bas"
-echo `date`
-echo "-----------------------------------------------------"
-
-#PAMS 
-alias mdm=/home/baskar/Projects/PAMS-MDM
-alias pams='cd /home/baskar/Projects/PAMS-WWW/;byobu'
-alias www='cd /home/baskar/Projects/PAMS-WWW/;'
-alias alerts='cd /home/baskar/Projects/PAMS-WWW/;'
-alias mdm='cd /home/baskar/Projects/PAMS-MDM/;'
-alias common='cd /home/baskar/Projects/PAMS-Common/;'
-alias com='cd /home/baskar/Projects/PAMS-Common/;'
-alias and='cd /home/baskar/Personal/Projects/AndroidStudioProjects/';
-
-# Config information 
-export PAMS_COMMON_MAIN_CONFIG=/home/baskar/Projects/PAMS-Common/conf/main.pl
-export PAMS_COMMON_DB_CONFIG=/home/baskar/Projects/PAMS-Common/conf/db.pl
-
-# MDM, Common 
-export PERL5LIB=/home/baskar/Projects/PAMS-Common/lib/:${PERL5LIB}
-export PERL5LIB=/home/baskar/Projects/PAMS-MDM/lib/:${PERL5LIB}
-export PERL5LIB=/home/baskar/Projects/Dispatcher/lib:${PERL5LIB}
-export PAMS_WWW_ROOT=/home/baskar/Projects/PAMS-WWW/
-
-export ANDROID_NDK=/home/baskar/Android/Ndk/android-ndk-r10d
-export ANDROID_SDK=/home/baskar/Android/Sdk/
-export ANDROID_HOME=/home/baskar/Android/Sdk/
-
-
+alias adb=/home/baskar/Android/Sdk/platform-tools/adb
+alias gradle=/home/baskar/Data/Packages/gradle-4.4.1/bin/gradle
+alias jgit=/home/baskar/Data/Projects/Jgit/jgit.sh
+alias s3cmd=/home/baskar/Data/Projects/s3cmd/s3cmd
